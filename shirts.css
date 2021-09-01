@@ -1,0 +1,149 @@
+.listing_main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    
+    padding: 40px 20px;
+    
+}
+.listing_item{
+    display: flex;
+    flex-direction: column;
+    border:1px solid rgb(66, 61, 61);
+    
+}
+.listing_item a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 71%;
+}
+.listing_item img{
+    width: 100%;
+    height: 100%;
+   
+}
+.heading{
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.desc{
+    font-family: serif;
+    font-size: 16px;
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.price{
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+
+@media all and (max-width:768px) and (min-width:600px){
+   
+    .listing_main{
+        padding: 40px 40px;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .listing_item{
+        display: flex;
+        flex-direction: column;
+        border:none;
+    }
+    .listing_item img{
+        width: 100%;
+        height: 100%;
+        border:1px solid gray;
+        
+    }
+}
+@media all and (max-width:1024px) and (min-width:769px){
+    
+    .listing_main{
+        padding: 40px 60px;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .listing_item{
+        display: flex;
+        flex-direction: column;
+        border:none;
+    }
+    .listing_item img{
+        width: 80%;
+        height: 80%;
+        border:0.1px solid black;
+        align-self: center;
+    }
+    .heading{
+        font-size: 20px;
+        font-weight: bold;
+        opacity: 0.9;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+    .desc{
+        font-family: serif;
+        font-size: 18px;
+        opacity: 0.8;
+        margin-top: 5px;
+        margin-left: 22px;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-left: 22px;
+    }
+}
+    @media all and (min-width:1025px){
+       
+       .listing_main{
+            padding: 40px 100px;
+            grid-template-columns: repeat(3,1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        .listing_item{
+            display: flex;
+            flex-direction: column;
+            border:none;
+        }
+        .listing_item img{
+            width: 50%;
+            height: 60%;
+            border:0.1px solid black;
+            align-self: center;
+        }
+        .heading{
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0.9;
+            margin-top: 10px;
+            margin-left: 77px;
+        
+        }
+        .desc{
+            font-family: serif;
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 5px;
+            margin-left: 30px;
+            margin-left: 77px;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-left: 30px;
+            padding-bottom: 0px;
+            margin-left: 77px;
+        }
+}
+

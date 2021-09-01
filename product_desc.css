@@ -1,0 +1,340 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0px 0px;
+    background-color:  rgba(219, 214, 214, 0.349);
+
+}
+.img_class{
+    width: 100%;
+    height: 100%;
+}
+.img_class img{
+    width: 100%;
+    height: 80%;
+    
+    border: 1px solid gray;
+}
+.right_panel{
+    margin-top: -128px;
+  
+}
+.heading_sec{
+    background-color: white;
+    padding:25px 20px;
+}
+.heading{
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.9;
+
+}
+.desc{
+    font-family: serif;
+    font-size: 18px;
+    opacity: 0.8;
+    margin-top: 5px;
+    height: 10px;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.5em; 
+    opacity: 0.8; 
+}
+.size_section{
+    padding:10px 20px;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
+}
+.size_heading{
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.size_list{
+    display: flex;
+    padding:15px 0px;
+    justify-content: space-evenly;
+}
+.round{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    border-radius: 80%;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.round:hover{
+    background-color: gray;
+}
+
+
+.quantity{
+        padding:15px 20px;
+        margin-top: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
+        display: flex;
+        flex-direction: column;
+}
+.quantity input{
+    margin:10px 0px;
+    height: 35px;
+    width: 60%;
+    border: 1px solid gray;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.add_to_cart{
+    background-color: #F55079;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.add_to_cart span{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.prod_desc{
+    background-color: white;
+    padding:10px 20px;
+}
+.prod_desc ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.prod_desc ul li{
+   font-size: 16px;
+   line-height: 24px;
+   margin-left: -10%;
+}
+
+@media all and (min-width:604px) and (max-width:768px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 32px 0px;
+        background-color:  white;
+
+    }
+    .img_class{
+        width: 80%;
+        height: 100%;
+        justify-self: center;
+        
+    }
+    .img_class img{
+        width: 100%;
+        height: 80%;
+        border: none
+    }
+    .right_panel{
+        padding-left: 30px;
+    }
+    .size_section{
+        padding:10px 20px;
+        margin-top: 5px;
+        background-color: white;
+        box-shadow: none
+    }
+    .size_list{
+        justify-content: flex-start;
+    }
+
+    .round{
+        margin-left: 40px;
+    }
+    .round:first-child{
+        margin-left: 0px;
+    }
+    .quantity{
+        padding:15px 20px;
+        margin-top: 5px;
+        background-color: white;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .quantity input{
+        margin-top: 15px;
+    }
+    .add_to_cart{
+
+        width: 90%;
+        padding:18px 0px;
+    }
+    
+}
+@media all and (min-width:768px) and (max-width:1024px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 64px 0px;
+        background-color:  white;
+
+    }
+    .img_class{
+        width: 70%;
+        height: 95%;
+        justify-self: center;
+        
+    }
+    .img_class img{
+        width: 100%;
+        height: 80%;
+        border: none
+    }
+    .right_panel{
+        padding-left: 12%;
+        margin-top: -180px;
+    }
+    .add_to_cart{
+
+        width: 80%;
+        padding:18px 0px;
+    }
+    .size_section{
+        padding:10px 20px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: none
+    }
+    .size_list{
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .round{
+        margin-left: 40px;
+    }
+    .round:first-child{
+        margin-left: 0px;
+    }
+    .quantity{
+        padding:15px 20px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .quantity input{
+        margin-top: 15px;
+    }
+    .prod_desc{
+        margin-top: 10px;
+    }
+    .prod_desc ul li{
+        font-size: 18px;
+    }
+    .add_to_cart{
+        margin-top: 10px;
+        width: 90%;
+        padding:18px 0px;
+    }
+}
+
+@media all and (min-width:1024px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 64px 64   px;
+        background-color:  white;
+    }
+    .img_class{
+        width: 70%;
+        height: 95%;
+        justify-self: center;
+        
+    }
+    .img_class img{
+        width: 100%;
+        height: 80%;
+        border: none
+    }
+    
+    .right_panel{
+        padding-left: 12%;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .add_to_cart{
+        width: 90%;
+        padding:18px 0px;
+    }
+    .size_section{
+        padding:10px 20px;
+        background-color: white;
+        box-shadow: none;
+        padding-top: 0px;
+
+    }
+    .size_list{
+        justify-content: flex-start;
+    }
+    .size_heading{
+        font-size: 18px;
+    }
+
+    .round{
+        margin-left: 20px;
+    }
+    .round:first-child{
+        margin-left: 0px;
+    }
+    .quantity{
+        padding:0px 20px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .quantity input{
+        margin-top: 15px;
+    }
+    .prod_desc{
+        margin-top: 10px;
+    }
+    .prod_desc ul li{
+        font-size: 14px;
+    }
+    .add_to_cart{
+        margin-top: 10px;
+        width: 80%;
+        padding:10px 0px;
+        align-self: center;
+    }
+    .heading_sec{
+        padding:25px 20px;
+        padding-top: 0px;
+    }
+    .heading{
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 0.9;
+    
+    }
+    .desc{
+        font-family: serif;
+        font-size: 14px;
+        opacity: 0.8;
+        margin-top: 5px;
+        height: 10px;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 1em; 
+        opacity: 0.8; 
+    }
+}

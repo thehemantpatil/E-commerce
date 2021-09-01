@@ -1,0 +1,129 @@
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    
+}
+nav span{
+    padding:20px;
+    font-size: 26px;
+}
+.img_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:10px 20px;
+    border: 1px solid gray;
+    
+    padding: 10px;
+}
+.img_div img{
+   width: 70%;
+   height: 60%;
+   justify-self: center;
+}
+.heading_sec{
+    padding-top: 10px;
+}
+.heading{
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 0.9;
+   
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1em; 
+    opacity: 0.9; 
+    height: 1em;
+    margin-top: 5px;
+
+}
+.size{
+   
+    font-size: 1em;
+    margin-top: -10px;
+}
+.qty{
+    margin-top: 5px;
+}
+.shopping_bag{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.footer{
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 0.8;
+    grid-column: 1/-1;
+    display: grid;
+    margin-top: -5%;
+    grid-template-columns: 1fr 1fr;
+    border-top: 2px dotted gray;
+
+    
+}
+.footer div{
+    margin: 6% 0px;
+    justify-self: center;
+    align-self: center;  
+}
+.footer div:nth-child(2){
+    background-color:  #F55079;
+    padding:10px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+}
+@media all and (min-width:604px) and (max-width:768px){
+    .img_div{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .img_div img{
+        width: 150px;
+        height: 70%;
+        justify-self: center;
+    }
+}
+@media all and (min-width:769px) and (max-width:1024px){
+    .img_div{
+        margin-left: 18%;
+        margin-right: 18%;
+        
+    }
+    .img_div img{
+        width: 150px;
+        height: 70%;
+        justify-self: center;
+        
+    }
+    .shopping_bag{
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+}
+@media all and (min-width:1024px){
+    .img_div{
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+    .img_div img{
+        width: 150px;
+        height: 60%;
+        justify-self: center;
+    }
+    .shopping_bag{
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+}
