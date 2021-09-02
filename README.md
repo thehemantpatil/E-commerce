@@ -27,8 +27,7 @@ To clone and run this project
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/chekromul/uikit-ecommerce-template.git
-
+$ https://github.com/thehemantpatil/E-commerce.git
 # open Homepage.html on your browser
 
 ```
