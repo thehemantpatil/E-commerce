@@ -96,6 +96,10 @@
     justify-content: center;
     padding: 10px 0px;
     border-radius: 10px;
+    cursor: pointer;
+}
+.add_to_cart:hover{
+    background-color: #c21e47;
 }
 .add_to_cart span{
     font-size: 22px;

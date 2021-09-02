@@ -1,0 +1,167 @@
+nav{
+  display: flex;
+  
+}
+.nav_sec2{
+  flex: 1;
+  justify-content:flex-end;
+}
+.Men a{
+  font-size: 22px
+}
+.nav_sec1{
+  flex: 1;
+  justify-content:flex-end;
+  
+}
+.cart{
+    justify-self: flex-end;
+}
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:20px 20px;
+}
+.main div{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  border: none;
+  padding-left: 10px;
+  border-bottom: 0.5px solid gray;
+  margin: 20px 0px;
+  padding-bottom: 15px;
+}
+.head{
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.expiry input{
+  width: 29.8%;
+  
+}
+.state input{
+  width: 45%;
+}
+.order .heading_sec{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.price, .tot_price{
+  justify-self: flex-end;
+}
+.tot_price{
+  grid-row: 3/4;
+  margin-top: 15px;
+}
+.desc{
+  opacity: 0.6;
+  margin-top: 1px;
+}
+.total{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-top: 15px;
+}
+.place_order{
+  background-color:  #F55079;
+  padding:15px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  letter-spacing: 1.2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.place_order a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+@media all and (min-width:769px) and (max-width:1024px){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    
+  }
+  .payment{
+    grid-column: 2/3;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .shipping{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: -5;
+
+  }
+  .place_order{
+    grid-column: 2/3;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+  }
+  .expiry input{
+    width: 25%;
+  }
+  .order{
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+@media all and (min-width:1024px){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin:20px 10%;
+    
+  }
+  .payment{
+    grid-column: 2/3;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .payment input:nth-child(2){
+    margin-top: 38px;
+  }
+  .shipping{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: -5;
+
+  }
+  .place_order{
+    grid-column: 2/3;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+   
+  }
+  .expiry input{
+    width: 25%;
+  }
+  .order{
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+
+
