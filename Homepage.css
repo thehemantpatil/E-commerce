@@ -1,85 +1,82 @@
-
-
 /* category */
-.category{
+
+.category {
     padding: 40px 32px;
 }
-#heading{
+
+#heading {
     font-size: 24px;
     letter-spacing: 3px;
     font-family: 'Times New Roman';
-    font-weight: bold; 
-
+    font-weight: bold;
 }
-.category_list{
+
+.category_list {
     padding: 40px 0px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
     row-gap: 60px;
     column-gap: 10px;
 }
-.all_lists{
+
+.all_lists {
     background-color: white;
-  
 }
-.all_lists a{
+
+.all_lists a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: 22px;    
+    font-size: 22px;
 }
-.all_lists span{
+
+.all_lists span {
     font-size: 22px;
     color: black;
     margin-top: 20px;
     opacity: 0.8;
     background-color: white;
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
-    padding:20px 0px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .5);
+    padding: 20px 0px;
     margin-top: 2px;
     width: 150px;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
 }
-.all_lists img{
+
+.all_lists img {
     width: 150px;
-    height:150px;
+    height: 150px;
     background-size: contain;
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .5);
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
-
-
-@media all and (max-width:768px) and (min-width:480px){
-   
-    .category{
+@media all and (max-width:768px) and (min-width:480px) {
+    .category {
         padding: 40px 62px;
     }
-    
-}
-@media all and (max-width:1024px) and (min-width:769px){
-    
-    .category{
-        padding: 40px 84px;
-    }
-    .category_list{
-        grid-template-columns: 1fr 1fr 1fr;
-     }
-}
-    @media all and (min-width:1025px){
-       
-        .category{
-            padding: 40px 124px;
-        }
-        .category_list{
-            grid-template-columns: 1fr 1fr 1fr;
-         }
 }
 
+@media all and (max-width:1024px) and (min-width:769px) {
+    .category {
+        padding: 40px 84px;
+    }
+    .category_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media all and (min-width:1025px) {
+    .category {
+        padding: 40px 124px;
+    }
+    .category_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

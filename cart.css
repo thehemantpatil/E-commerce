@@ -1,67 +1,70 @@
-.main{
+.main {
     display: flex;
     flex-direction: column;
-
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
-    
 }
-nav a{
 
+nav a {
     font-size: 26px;
     text-decoration: none;
     color: black;
 }
-.img_div{
+
+.img_div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin:10px 20px;
+    margin: 10px 20px;
     border: 1px solid gray;
-    
     padding: 10px;
 }
-.img_div img{
-   width: 70%;
-   height: 75%;
-   justify-self: center;
+
+.img_div img {
+    width: 70%;
+    height: 75%;
+    justify-self: center;
 }
-.heading_sec{
+
+.heading_sec {
     padding-top: 10px;
 }
-.heading{
+
+.heading {
     font-size: 1em;
     font-weight: bold;
     opacity: 0.9;
-   
 }
 
-.price{
+.price {
     font-weight: bold;
-    font-size: 1em; 
-    opacity: 0.9; 
+    font-size: 1em;
+    opacity: 0.9;
     height: 1em;
     margin-top: 5px;
-
 }
-.size{
-   
+
+.size {
     font-size: 1em;
     margin-top: -10px;
 }
-.qty{
+
+.qty {
     margin-top: 5px;
 }
-.shopping_bag{
+
+.shopping_bag {
     display: flex;
     justify-content: space-between;
-    margin:40px 20px;
+    margin: 40px 20px;
     font-size: 1.5em;
     font-weight: bold;
     opacity: 0.8;
 }
-.footer{
+
+.footer {
     font-size: 1em;
     font-weight: bold;
     opacity: 0.8;
@@ -70,67 +73,67 @@ nav a{
     margin-top: -5%;
     grid-template-columns: 1fr 1fr;
     border-top: 2px dotted gray;
-
-    
 }
-.footer div{
+
+.footer div {
     margin: 6% 0px;
     justify-self: center;
-    align-self: center;  
+    align-self: center;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    
 }
-.footer div:nth-child(2){
-    background-color:  #F55079;
-    padding:10px;
+
+.footer div:nth-child(2) {
+    background-color: #F55079;
+    padding: 10px;
     color: rgb(255, 255, 255);
     opacity: 1;
     letter-spacing: 1.2px;
     border-radius: 5px;
-    
 }
-@media all and (min-width:604px) and (max-width:768px){
-    .img_div{
+
+@media all and (min-width:604px) and (max-width:768px) {
+    .img_div {
         margin-left: 30px;
         margin-right: 30px;
     }
-    .img_div img{
+    .img_div img {
         width: 150px;
         height: 80%;
         justify-self: center;
     }
 }
-@media all and (min-width:769px) and (max-width:1024px){
-    .img_div{
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .img_div {
         margin-left: 18%;
         margin-right: 18%;
-        
     }
-    .img_div img{
+    .img_div img {
         width: 150px;
         height: 80%;
         justify-self: center;
-        
     }
-    .shopping_bag{
+    .shopping_bag {
         margin-left: 18%;
         margin-right: 18%;
     }
 }
-@media all and (min-width:1024px){
-    .img_div{
+
+@media all and (min-width:1024px) {
+    .img_div {
         margin-left: 22%;
         margin-right: 22%;
     }
-    .img_div img{
+    .img_div img {
         width: 150px;
         height: 75%;
         justify-self: center;
     }
-    .shopping_bag{
+    .shopping_bag {
         margin-left: 22%;
         margin-right: 22%;
     }

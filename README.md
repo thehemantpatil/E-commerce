@@ -4,7 +4,7 @@ Responsive e-commerce template containing catalog, product page, shopping cart a
 
 Built with [HTML]() & [CSS]()
 
-Demo: https://chekromul.github.io/uikit-ecommerce-template
+Demo: https://hemant-e-commerce.herokuapp.com/
 
 
 ## Overview
